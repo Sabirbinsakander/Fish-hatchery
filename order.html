@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Fingerlings | AquaGrow Bangladesh</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Noto+Sans+Bengali:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body class="lang-en">
+    <!-- Same header as index.html -->
+    <div class="language-switcher">
+        <button class="lang-btn active" data-lang="en">ENGLISH</button>
+        <button class="lang-btn" data-lang="bn">বাংলা</button>
+    </div>
+
+    <a href="https://wa.me/8801712345678?text=I%20want%20to%20order%20fingerlings" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+        <span>Order on WhatsApp</span>
+    </a>
+
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <div style="width: 50px; height: 50px; background: var(--primary-blue); border-radius: 8px; display: flex; align-items: center; justify-content: center; color: white; font-size: 24px;">
+                        <i class="fas fa-fish"></i>
+                    </div>
+                    <div>
+                        <h1 class="en-text">AquaGrow Bangladesh</h1>
+                        <h1 class="bn-text">অ্যাকুয়াগ্রো বাংলাদেশ</h1>
+                        <p class="tagline en-text">Order Healthy Fingerlings</p>
+                        <p class="tagline bn-text">স্বাস্থ্যকর পোনা অর্ডার করুন</p>
+                    </div>
+                </div>
+                
+                <div class="nav-links">
+                    <a href="index.html" class="en-text">Home</a>
+                    <a href="index.html" class="bn-text">হোম</a>
+                    
+                    <a href="products.html" class="en-text">Products</a>
+                    <a href="products.html" class="bn-text">পণ্য</a>
+                    
+                    <a href="order.html" class="active en-text">Order Now</a>
+                    <a href="order.html" class="active bn-text">অর্ডার করুন</a>
+                    
+                    <a href="contact.html" class="en-text">Contact</a>
+                    <a href="contact.html" class="bn-text">যোগাযোগ</a>
+                    
+                    <a href="tel:+8801712345678" class="call-btn">
+                        <i class="fas fa-phone"></i>
+                        <span class="en-text">Call Now</span>
+                        <span class="bn-text">কল করুন</span>
+                    </a>
+                </div>
+                
+                <button class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Order Form Section -->
+    <section class="order-form-section">
+        <div class="container">
+            <div class="order-header">
+                <h1 class="en-text">Order Fish & Fingerlings</h1>
+                <h1 class="bn-text">মাছ ও পোনা অর্ডার করুন</h1>
+                <p class="en-text">Fill the form below and we'll contact you within 30 minutes</p>
+                <p class="bn-text">নিচের ফর্মটি পূরণ করুন, আমরা ৩০ মিনিটের মধ্যে আপনার সাথে যোগাযোগ করব</p>
+            </div>
+            
+            <div class="order-container">
+                <div class="order-form">
+                    <form id="orderForm">
+                        <div class="form-group">
+                            <label for="name" class="en-text">Full Name</label>
+                            <label for="name" class="bn-text">পুরো নাম</label>
+                            <input type="text" id="name" name="name" required placeholder="John Doe">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone" class="en-text">Phone Number</label>
+                            <label for="phone" class="bn-text">ফোন নম্বর</label>
+                            <input type="tel" id="phone" name="phone" required placeholder="01712-345678">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email" class="en-text">Email (Optional)</label>
+                            <label for="email" class="bn-text">ইমেইল (ঐচ্ছিক)</label>
+                            <input type="email" id="email" name="email" placeholder="example@email.com">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="en-text">Select Fish Type</label>
+                            <label class="bn-text">মাছের প্রকার নির্বাচন করুন</label>
+                            <div class="fish-options">
+                                <div class="fish-option">
+                                    <input type="radio" id="rohu" name="fishType" value="Rohu Fingerlings" checked>
+                                    <label for="rohu" class="en-text">Rohu Fingerlings</label>
+                                    <label for="rohu" class="bn-text">রুই পোনা</label>
+                                </div>
+                                <div class="fish-option">
+                                    <input type="radio" id="catla" name="fishType" value="Catla Fingerlings">
+                                    <label for="catla" class="en-text">Catla Fingerlings</label>
+                                    <label for="catla" class="bn-text">কাতলা পোনা</label>
+                                </div>
+                                <div class="fish-option">
+                                    <input type="radio" id="tilapia" name="fishType" value="Tilapia Fingerlings">
+                                    <label for="tilapia" class="en-text">Tilapia Fingerlings</label>
+                                    <label for="tilapia" class="bn-text">তেলাপিয়া পোনা</label>
+                                </div>
+                                <div class="fish-option">
+                                    <input type="radio" id="pangas" name="fishType" value="Pangas Fingerlings">
+                                    <label for="pangas" class="en-text">Pangas Fingerlings</label>
+                                    <label for="pangas" class="bn-text">পাঙ্গাস পোনা</label>
+                                </div>
+                                <div class="fish-option">
+                                    <input type="radio" id="other" name="fishType" value="Other">
+                                    <label for="other" class="en-text">Other</label>
+                                    <label for="other" class="bn-text">অন্যান্য</label>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="quantity" class="en-text">Quantity (Pieces)</label>
+                                <label for="quantity" class="bn-text">পরিমাণ (টুকরা)</label>
+                                <select id="quantity" name="quantity" required>
+                                    <option value="100">100 pieces</option>
+                                    <option value="500">500 pieces</option>
+                                    <option value="1000">1,000 pieces</option>
+                                    <option value="5000">5,000 pieces</option>
+                                    <option value="10000">10,000 pieces</option>
+                                    <option value="50000">50,000 pieces</option>
+                                    <option value="100000">1,00,000 pieces</option>
+                                    <option value="custom">Custom Amount</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="size" class="en-text">Size (cm)</label>
+                                <label for="size" class="bn-text">সাইজ (সেমি)</label>
+                                <select id="size" name="size" required>
+                                    <option value="3-5">3-5 cm</option>
+                                    <option value="5-8">5-8 cm</option>
+                                    <option value="8-12">8-12 cm</option>
+                                    <option value="12+">12+ cm</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="address" class="en-text">Delivery Address</label>
+                            <label for="address" class="bn-text">ডেলিভারি ঠিকানা</label>
+                            <textarea id="address" name="address" rows="3" required placeholder="Village, Union, Upazila, District"></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="district" class="en-text">District</label>
+                            <label for="district" class="bn-text">জেলা</label>
+                            <select id="district" name="district" required>
+                                <option value="">Select District</option>
+                                <option value="Natore">Natore</option>
+                                <option value="Rajshahi">Rajshahi</option>
+                                <option value="Pabna">Pabna</option>
+                                <option value="Bogura">Bogura</option>
+                                <option value="Sirajganj">Sirajganj</option>
+                                <option value="Naogaon">Naogaon</option>
+                                <option value="Other">Other District</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message" class="en-text">Additional Message (Optional)</label>
+                            <label for="message" class="bn-text">অতিরিক্ত বার্তা (ঐচ্ছিক)</label>
+                            <textarea id="message" name="message" rows="3" placeholder="Special instructions or questions"></textarea>
+                        </div>
+                        
+                        <div class="form-submit">
+                            <button type="submit" class="btn-primary btn-large en-text">
+                                <i class="fas fa-paper-plane"></i> Submit Order
+                            </button>
+                            <button type="submit" class="btn-primary btn-large bn-text">
+                                <i class="fas fa-paper-plane"></i> অর্ডার সাবমিট করুন
+                            </button>
+                            
+                            <p class="en-text">Or call directly: <a href="tel:+8801712345678">+880 1712-345678</a></p>
+                            <p class="bn-text">অথবা সরাসরি কল করুন: <a href="tel:+8801712345678">+৮৮০ ১৭১২-৩৪৫৬৭৮</a></p>
+                        </div>
+                    </form>
+                </div>
+                
+                <div class="order-summary">
+                    <div class="summary-card">
+                        <h3 class="en-text">Order Summary</h3>
+                        <h3 class="bn-text">অর্ডার সারসংক্ষেপ</h3>
+                        
+                        <div class="summary-item">
+                            <span class="en-text">Estimated Price:</span>
+                            <span class="bn-text">আনুমানিক মূল্য:</span>
+                            <span class="price">৳ 0.00</span>
+                        </div>
+                        
+                        <div class="summary-item">
+                            <span class="en-text">Delivery Charge:</span>
+                            <span class="bn-text">ডেলিভারি চার্জ:</span>
+                            <span class="price">৳ 0-500</span>
+                        </div>
+                        
+                        <div class="summary-item total">
+                            <span class="en-text">Total Estimated:</span>
+                            <span class="bn-text">মোট আনুমানিক:</span>
+                            <span class="price">৳ 0.00</span>
+                        </div>
+                        
+                        <div class="summary-note">
+                            <p class="en-text"><i class="fas fa-info-circle"></i> Final price confirmed after phone verification</p>
+                            <p class="bn-text"><i class="fas fa-info-circle"></i> চূড়ান্ত মূল্য ফোনে যাচাই করার পরে নিশ্চিত করা হবে</p>
+                        </div>
+                        
+                        <div class="delivery-info">
+                            <h4 class="en-text">Delivery Information</h4>
+                            <h4 class="bn-text">ডেলিভারি তথ্য</h4>
+                            <ul>
+                                <li class="en-text"><i class="fas fa-check"></i> 24-48 hours delivery</li>
+                                <li class="bn-text"><i class="fas fa-check"></i> ২৪-৪৮ ঘন্টার মধ্যে ডেলিভারি</li>
+                                <li class="en-text"><i class="fas fa-check"></i> Oxygen packed live fish</li>
+                                <li class="bn-text"><i class="fas fa-check"></i> অক্সিজেন প্যাকেটে জীবন্ত মাছ</li>
+                                <li class="en-text"><i class="fas fa-check"></i> Free delivery for 5000+ pieces</li>
+                                <li class="bn-text"><i class="fas fa-check"></i> ৫০০০+ টুকরার জন্য বিনামূল্যে ডেলিভারি</li>
+                                <li class="en-text"><i class="fas fa-check"></i> 99% survival rate guarantee</li>
+                                <li class="bn-text"><i class="fas fa-check"></i> ৯৯% বেঁচে থাকার হার গ্যারান্টি</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="payment-methods">
+                            <h4 class="en-text">Payment Methods</h4>
+                            <h4 class="bn-text">পেমেন্ট পদ্ধতি</h4>
+                            <div class="payment-icons">
+                                <div class="payment-icon">
+                                    <i class="fas fa-money-bill-wave"></i>
+                                    <span class="en-text">Cash on Delivery</span>
+                                    <span class="bn-text">ক্যাশ অন ডেলিভারি</span>
+                                </div>
+                                <div class="payment-icon">
+                                    <i class="fas fa-mobile-alt"></i>
+                                    <span class="en-text">bKash / Nagad</span>
+                                    <span class="bn-text">বিকাশ / নগদ</span>
+                                </div>
+                                <div class="payment-icon">
+                                    <i class="fas fa-university"></i>
+                                    <span class="en-text">Bank Transfer</span>
+                                    <span class="bn-text">ব্যাংক ট্রান্সফার</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (same as index.html) -->
+    <footer class="footer">
+        <div class="container">
+            <!-- Same footer content as index.html -->
+            <div class="footer-bottom">
+                <p class="en-text">© <span class="current-year">2023</span> AquaGrow Bangladesh. All rights reserved.</p>
+                <p class="bn-text">© <span class="current-year">২০২৩</span> অ্যাকুয়াগ্রো বাংলাদেশ। সর্বস্বত্ব সংরক্ষিত।</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Add CSS for order form -->
+    <style>
+        .order-form-section {
+            padding: 60px 0;
+            background: var(--light-gray);
+            min-height: calc(100vh - 400px);
+        }
+        
+        .order-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        .order-header h1 {
+            font-size: 36px;
+            color: var(--dark);
+            margin-bottom: 10px;
+        }
+        
+        .order-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        
+        .order-form {
+            background: var(--white);
+            padding: 40px;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+        }
+        
+        .form-group {
+            margin-bottom: 25px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: var(--dark);
+        }
+        
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid #ddd;
+            border-radius: var(--radius);
+            font-family: 'Poppins', sans-serif;
+            font-size: 16px;
+            transition: var(--transition);
+        }
+        
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--primary-blue);
+            box-shadow: 0 0 0 3px rgba(26, 115, 232, 0.1);
+        }
+        
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        
+        .fish-options {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            gap: 10px;
+        }
+        
+        .fish-option {
+            background: var(--light-gray);
+            padding: 12px;
+            border-radius: var(--radius);
+            cursor: pointer;
+            transition: var(--transition);
+        }
+        
+        .fish-option:hover {
+            background: #e3f2fd;
+        }
+        
+        .fish-option input {
+            width: auto;
+            margin-right: 8px;
+        }
+        
+        .form-submit {
+            margin-top: 30px;
+            text-align: center;
+        }
+        
+        .form-submit p {
+            margin-top: 15px;
+            color: var(--gray);
+        }
+        
+        .form-submit a {
+            color: var(--primary-blue);
+            text-decoration: none;
+            font-weight: 600;
+        }
+        
+        .summary-card {
+            background: var(--white);
+            padding: 30px;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            position: sticky;
+            top: 100px;
+        }
+        
+        .summary-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 15px 0;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .summary-item.total {
+            border-top: 2px solid var(--primary-blue);
+            border-bottom: none;
+            font-size: 20px;
+            font-weight: 700;
+            color: var(--primary-blue);
+            margin-top: 10px;
+        }
+        
+        .summary-note {
+            background: #e3f2fd;
+            padding: 15px;
+            border-radius: var(--radius);
+            margin: 20px 0;
+            font-size: 14px;
+        }
+        
+        .summary-note i {
+            color: var(--primary-blue);
+            margin-right: 8px;
+        }
+        
+        .delivery-info ul {
+            list-style: none;
+            margin-top: 15px;
+        }
+        
+        .delivery-info li {
+            padding: 8px 0;
+            color: var(--gray);
+        }
+        
+        .delivery-info i {
+            color: var(--aqua-green);
+            margin-right: 10px;
+        }
+        
+        .payment-icons {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            margin-top: 15px;
+        }
+        
+        .payment-icon {
+            text-align: center;
+            padding: 15px 10px;
+            background: var(--light-gray);
+            border-radius: var(--radius);
+        }
+        
+        .payment-icon i {
+            font-size: 24px;
+            color: var(--primary-blue);
+            display: block;
+            margin-bottom: 8px;
+        }
+        
+        .payment-icon span {
+            font-size: 12px;
+            display: block;
+        }
+        
+        @media (max-width: 768px) {
+            .order-container {
+                grid-template-columns: 1fr;
+            }
+            
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+            
+            .fish-options {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+
+    <script src="js/main.js"></script>
+    <script src="js/language-toggle.js"></script>
+    <script>
+        // Price calculator for order form
+        document.addEventListener('DOMContentLoaded', function() {
+            const quantitySelect = document.getElementById('quantity');
+            const sizeSelect = document.getElementById('size');
+            const fishTypeRadios = document.querySelectorAll('input[name="fishType"]');
+            const priceElement = document.querySelector('.summary-item.total .price');
+            
+            const prices = {
+                'Rohu Fingerlings': { '3-5': 2.5, '5-8': 3.0, '8-12': 4.0, '12+': 5.0 },
+                'Catla Fingerlings': { '3-5': 3.0, '5-8': 3.5, '8-12': 4.5, '12+': 6.0 },
+                'Tilapia Fingerlings': { '3-5': 1.5, '5-8': 2.0, '8-12': 2.5, '12+': 3.5 },
+                'Pangas Fingerlings': { '3-5': 2.0, '5-8': 2.5, '8-12': 3.5, '12+': 4.5 },
+                'Other': { '3-5': 2.0, '5-8': 2.5, '8-12': 3.5, '12+': 4.5 }
+            };
+            
+            function calculatePrice() {
+                const fishType = document.querySelector('input[name="fishType"]:checked').value;
+                const quantity = parseInt(quantitySelect.value);
+                const size = sizeSelect.value;
+                
+                const unitPrice = prices[fishType][size] || 2.5;
+                const totalPrice = unitPrice * quantity;
+                
+                // Format with Bengali numerals if needed
+                const formattedPrice = formatPrice(totalPrice);
+                priceElement.textContent = `৳ ${formattedPrice}`;
+                
+                // Update estimated price
+                document.querySelector('.summary-item:first-child .price').textContent = `৳ ${formatPrice(totalPrice)}`;
+            }
+            
+            function formatPrice(price) {
+                // If in Bangla mode, convert to Bengali numerals
+                if (document.body.classList.contains('lang-bn')) {
+                    const bengaliNumerals = ['০', '১', '২', '৩', '৪', '৫', '৬', '৭', '৮', '৯'];
+                    return price.toLocaleString('en-US').replace(/\d/g, d => bengaliNumerals[d]);
+                }
+                return price.toLocaleString('en-US');
+            }
+            
+            // Add event listeners
+            quantitySelect.addEventListener('change', calculatePrice);
+            sizeSelect.addEventListener('change', calculatePrice);
+            fishTypeRadios.forEach(radio => {
+                radio.addEventListener('change', calculatePrice);
+            });
+            
+            // Initial calculation
+            calculatePrice();
+        });
+    </script>
+</body>
+</html>
